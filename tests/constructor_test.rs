@@ -9,7 +9,13 @@ struct Test {
 fn test() {
     let a = Test(String::from("Hello"), 100);
 
-    assert_eq!(a, Test { a: String::from("Hello"), b: 100 });
+    assert_eq!(
+        a,
+        Test {
+            a: String::from("Hello"),
+            b: 100
+        }
+    );
 
     dbg!(a);
 }
